@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-ovo: "Ovo", serif;
+  --font-family-outfit: "Outfit", sans-serif;
+  --color-light-hover: #fcf4ff;
+  --color-dark-hover: #2a004a;
+  --color-dark-theme: #000000;
+  --shadow-black: 4px 4px 0 #000;
+  --shadow-white: 4px 4px 0 #fff;
+  --grid-template-columns-auto: repeat(auto-fit, minmax(200px, 1fr));
+  --color-background: #ffffff;
+  --color-text: #000000;
+  --color-card: #ffffff;
+  --color-muted: #6b7280;
+}
+.dark,
+[data-theme="dark"] {
+  --color-background: #11001f;
+  --color-text: #ffffff;
+  --color-card: #2a004a;
+  --color-muted: #9ca3af;
+  --shadow-black: 4px 4px 0 #ffffff;
+  --shadow-white: 4px 4px 0 #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --color-background: #11001f;
+    --color-text: #ffffff;
+    --color-card: #2a004a;
+    --color-muted: #9ca3af;
+    --shadow-black: 4px 4px 0 #ffffff;
+    --shadow-white: 4px 4px 0 #000000;
+  }
+}
+
+@layer utilities {
+  .grid-cols-temp {
+    grid-template-columns: theme(--grid-template-columns-auto);
+
+    Utility classes using theme variables .bg-theme {
+      background-color: theme(--color-background);
+    }
+    .text-theme {
+      color: theme(--color-text);
+    }
+    .bg-card {
+      background-color: theme(--color-card);
+    }
+    .text-muted {
+      color: theme(--color-muted);
+    }
+  }
+}
