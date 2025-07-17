@@ -126,7 +126,7 @@ const Navbar = ({}) => {
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="block md:hidden ml-3"
+            className="block md:hidden ml-3 cursor-pointer"
             onClick={openMenu}
           >
             <Image src={assets.menu_black} alt="" className="w-6" />
@@ -155,7 +155,7 @@ const Navbar = ({}) => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <a className="font-Ovo" onClick={closeMenu} href="#top">
+            <a className="font-Ovo hover:bg-blue-200 rounded-full" onClick={closeMenu} href="#top">
               home
             </a>
           </motion.li>
@@ -164,7 +164,7 @@ const Navbar = ({}) => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <a className="font-Ovo" onClick={closeMenu} href="#about">
+            <a className="font-Ovo hover:bg-blue-200 rounded-full" onClick={closeMenu} href="#about">
               about me
             </a>
           </motion.li>
@@ -173,7 +173,7 @@ const Navbar = ({}) => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <a className="font-Ovo" onClick={closeMenu} href="#services">
+            <a className="font-Ovo hover:bg-blue-200 rounded-full" onClick={closeMenu} href="#services">
               services
             </a>
           </motion.li>
@@ -182,7 +182,7 @@ const Navbar = ({}) => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <a className="font-Ovo" onClick={closeMenu} href="#work">
+            <a className="font-Ovo hover:bg-blue-200 rounded-full" onClick={closeMenu} href="#work">
               my work
             </a>
           </motion.li>
@@ -191,7 +191,7 @@ const Navbar = ({}) => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <a className="font-Ovo" onClick={closeMenu} href="#projects">
+            <a className="font-Ovo hover:bg-blue-200 rounded-full" onClick={closeMenu} href="#projects">
               my projects
             </a>
           </motion.li>
@@ -200,8 +200,8 @@ const Navbar = ({}) => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <a className="font-Ovo" onClick={closeMenu} href="#contact">
-              contact me <Image src={assets.arrow_icon} alt="arrow_icon" className="w-3" />
+            <a className="font-Ovo hover:bg-blue-200 rounded-full" onClick={closeMenu} href="#contact">
+              contact me 
             </a>
           </motion.li>
         </motion.ul>
