@@ -47,7 +47,9 @@ import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 import workImg1 from "./work-1.png";
 import workImg2 from "./work-2.png";
 import workImg3 from "./work-3.png";
-import workImg4 from "./work-4.png";
+// import workImg4 from "./work-4.png";
+import workImg5 from "./work-5.png";
+import workImg6 from "./work-6.png";
 
 export const assets = {
   user_image,
@@ -98,33 +100,40 @@ export const assets = {
   workImg1,
   workImg2,
   workImg3,
-  workImg4,
+  workImg5,
+  workImg6,
 };
 
 export const workData = [
   {
-    title: "Orgo.travel",
-    description: "Frontend Development and SEO",
-    bgImage: assets.workImg1,
-    link: "https://orgo.travel/",
+    title: "Vistagram",
+    description: "Instagram clone and UI/UX",
+    bgImage: assets.workImg5,
+    link: "https://headout-vistagram-5w7w.vercel.app/",
+  },
+  {
+    title: "Form Builder",
+    description: "Modern Form Builder",
+    bgImage: assets.workImg6,
+    link: "https://upliance-form-builder-chi.vercel.app/",
+  },
+  {
+    title: "Portfolio",
+    description: "Modern Next.js Portfolio",
+    bgImage: assets.workImg5,
+    link: "https://portfolio-ashwath-saxena.vercel.app/",
   },
   {
     title: "Peak Planner",
-    description: "Full Stack Development and UI/UX Design",
-    bgImage: assets.workImg2,
+    description: "Full-stack Trekking App",
+    bgImage: assets.workImg6,
     link: "https://peakplanner.in/",
   },
   {
-    title: "Global Booking",
-    description: "Frontend Development and SEO",
-    bgImage: assets.workImg3,
-    link: "https://globalbookingcenter.com/",
-  },
-  {
-    title: "ANPR System",
-    description: "AI powered License Plate Recognition System",
-    bgImage: assets.workImg4,
-    link: "https://github.com/Ashwath-saxena/btp",
+    title: "Flight Booking",
+    description: "Full-stack booking system",
+    bgImage: assets.workImg5,
+    link: "https://flight-booking-system-ashwath-saxenas-projects.vercel.app/",
   },
 ];
 

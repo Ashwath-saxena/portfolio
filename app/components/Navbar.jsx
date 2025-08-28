@@ -1,4 +1,5 @@
-import { assets } from "@/assets/assets";
+// app/components/Navbar.jsx
+import { assets } from "../../assets/assets";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";

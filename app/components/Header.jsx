@@ -1,4 +1,5 @@
-import { assets } from "@/assets/assets";
+// app/components/Header.jsx
+import { assets } from "../../assets/assets";
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";

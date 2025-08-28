@@ -1,4 +1,5 @@
-import { assets, workData } from "@/assets/assets";
+// app/components/Projects.jsx
+import { assets, workData } from "../../assets/assets";
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";

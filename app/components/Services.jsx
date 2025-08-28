@@ -1,4 +1,5 @@
-import { serviceData } from "@/assets/assets";
+// app/components/Services.jsx
+import { serviceData } from "../../assets/assets";
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
